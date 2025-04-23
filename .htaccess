@@ -1,0 +1,35 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Block direct access to sensitive files
+    <FilesMatch "^\.(env|git|htaccess|htpasswd|composer\.(json|lock)|artisan|server\.php|package\.json|webpack\.mix\.js|yarn\.lock)$">
+        Require all denied
+    </FilesMatch>
+
+    # Alternative method (for older Apache versions)
+    <Files .env>
+        Order allow,deny
+        Deny from all
+    </Files>
+
+    # Block directories from being accessed directly
+    RewriteRule ^(node_modules|storage|tests|vendor)/ - [F,L]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Redirect all requests to the public folder
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>
