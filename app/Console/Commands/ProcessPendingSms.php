@@ -67,11 +67,8 @@ class ProcessPendingSms extends Command
             }
         } else {
 
-            Log::channel('process_log')->info("$fileName not found, so we will get all sms profile.", [
-                'path' => $path
-            ]);
+            Log::channel('process_log')->info("$fileName not found.");
 
-            $smsProfile = SmsProfile::get();
         }
 
         foreach ($smsProfile as $profile) {

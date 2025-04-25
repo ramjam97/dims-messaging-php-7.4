@@ -45,10 +45,9 @@ class SmsFiveSecondLoop extends Command
                 Artisan::call('app:process-pending-sms');
             } catch (\Throwable $e) {
                 Log::error("Error running SMS job: " . $e->getMessage());
+            } finally {
+                sleep(5);
             }
-
-            sleep(5);
         }
-        return 0;
     }
 }
