@@ -189,3 +189,29 @@
 [2025-04-25 11:30:46] local.INFO: ProcessPendingSms -> running  
 [2025-04-25 11:32:04] local.INFO: ProcessPendingSms -> running  
 [2025-04-25 11:33:25] local.INFO: ProcessPendingSms -> running  
+[2025-04-25 11:37:10] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:14:28] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:14:34] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:14:39] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:23:41] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:23:46] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:23:52] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:23:57] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:24:02] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:24:13] local.ERROR: [1]: [CompanyID:100219][messageID:73547] -> FAILED : 1 033 ERROR - insufficient credits  
+[2025-04-28 09:24:18] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:24:20] local.ERROR: [1]: [CompanyID:100219][messageID:73547] -> FAILED : 1 033 ERROR - insufficient credits  
+[2025-04-28 09:24:25] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:24:32] local.ERROR: [1]: [CompanyID:100219][messageID:73547] -> FAILED : 1 033 ERROR - insufficient credits  
+[2025-04-28 09:24:38] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:24:40] local.ERROR: [1]: [CompanyID:100219][messageID:73547] -> FAILED : 1 033 ERROR - insufficient credits  
+[2025-04-28 09:24:45] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:24:53] local.ERROR: [1]: [CompanyID:100219][messageID:73547] -> FAILED : 1 033 ERROR - insufficient credits  
+[2025-04-28 09:24:58] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:25:03] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:25:09] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:25:14] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:25:19] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:25:24] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:25:29] local.INFO: ProcessPendingSms -> running  
+[2025-04-28 09:25:35] local.INFO: ProcessPendingSms -> running  

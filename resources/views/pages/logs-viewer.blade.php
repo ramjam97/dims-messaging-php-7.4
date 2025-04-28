@@ -49,7 +49,7 @@
                         </select>
                         <button id="btnRawFile"
                             class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
-                            Raw
+                            Open Raw
                         </button>
                     </span>
 
@@ -60,11 +60,6 @@
                                 class="w-4 h-4 text-blue-500 border-gray-300 rounded focus:ring focus:ring-blue-300"
                                 checked>
                         </span>
-
-                        <button id="buttonSync"
-                            class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
-                            Sync
-                        </button>
                     </span>
 
                 </div>
@@ -80,7 +75,7 @@
         <div class="flex flex-row justify-center items-center p-3">
             <div
                 class="text-center text-gray-500 dark:text-gray-400 sm:text-right text-xs md:text-sm">
-                {{ config('app.name') }} v1.0.0 (PHP v{{ PHP_VERSION }})
+                {{ config('app.name') }} v1.0.1 (PHP v{{ PHP_VERSION }})
             </div>
         </div>
 
@@ -92,7 +87,6 @@
 
     const selectLog = document.getElementById('selectedLogFile');
     const buttonRawFile = document.getElementById('btnRawFile');
-    const buttonSync = document.getElementById('buttonSync');
     const cbAutoSync = document.getElementById('autSyncCB');
     const outputLogs = document.getElementById('output');
 
@@ -113,8 +107,6 @@
     cbAutoSync.addEventListener('change', () => {
         if (cbAutoSync.checked) fetchNewLogs();
     });
-
-    buttonSync.addEventListener('click', () => debounceFetchLogs());
 
     let fetchLogsTimeout = null;
     function debounceFetchLogs() {
